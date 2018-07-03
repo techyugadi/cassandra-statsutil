@@ -2,7 +2,7 @@
 -- The running count of values seen so far
 -- A running mean value
 -- A running sum of squares value
--- This method computes variance and stdev in one pass using Feldman's algo
+-- This method computes variance and stdev in one pass using Welford's algo
 CREATE OR REPLACE FUNCTION varState ( state tuple<int, double, double>, val int)
 CALLED ON NULL INPUT RETURNS tuple<int, double, double> LANGUAGE java AS '
 if (val != null) { 
