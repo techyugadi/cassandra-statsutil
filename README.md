@@ -14,8 +14,13 @@ For example, you could run the following queries:
 
 `
 SELECT variance (data) FROM mydata WHERE txtlabel='B';
+
 SELECT stdev (data) FROM mydata WHERE txtlabel='B';
+
+
 SELECT wtaverage (data) FROM mytuples WHERE txtlabel='B';
+
 SELECT correlation (data) FROM mycorr WHERE txtlabel='A';
+
 SELECT centroid (xyz) FROM points WHERE txtlabel='A';
 `
